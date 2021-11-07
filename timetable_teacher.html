@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/timetable.css">
+    <link rel="stylesheet" href="timetable_teacher.css">
+    <title>TimeTable</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="text-align:center">Thời khóa biểu</h1>
+    </header>
+
+    <section>
+        <table style="text-align:center" align="center">
+            <tr>
+                <th></th>
+                <th id=change_timetable>Thứ hai</th>
+                <th id=change_timetable>Thứ ba</th>
+                <th id=change_timetable>Thứ tư</th>
+                <th id=change_timetable>Thứ năm</th>
+                <th id=change_timetable>Thứ sáu</th>
+                <th id=change_timetable>Thứ bảy</th>
+                <th id=change_timetable>Chủ nhật</th>
+            </tr>
+            <tr>
+                <td id=change_timetable>7h đến 7h45</td>
+                <td id=change_timetable>Toán</td>
+                <td id=change_timetable>Tiếng Việt</td>
+                <td id=change_timetable>Toán</td>
+                <td id=change_timetable>Toán</td>
+                <td id=change_timetable>Toán</td>
+                <td id=change_timetable>Toán</td>
+                <td id=change_timetable>Nghỉ</td>
+            </tr>
+            <tr>
+                <td id=change_timetable>7h45 đến 8h30</td>
+                <td id=change_timetable>Thể Dục</td>
+                <td id=change_timetable>Tiếng Việt</td>
+                <td id=change_timetable>Tiếng Việt</td>
+                <td id=change_timetable>Âm Nhạc</td>
+                <td id=change_timetable>Toán</td>
+                <td id=change_timetable>Toán</td>
+                <td id=change_timetable>Nghỉ</td>
+            </tr>
+            <tr>
+                <td>8h45 đến 9h30</td>
+                <td>Âm Nhạc</td>
+                <td>Âm Nhạc</td>
+                <td>Âm Nhạc</td>
+                <td>Âm Nhạc</td>
+                <td>Âm Nhạc</td>
+                <td>Toán</td>
+                <td>Nghỉ</td>
+            </tr>
+            <tr>
+                <td>9h30 đến 10h15</td>
+                <td>Ngoại Ngữ</td>
+                <td>Ngoại Ngữ</td>
+                <td>Ngoại Ngữ</td>
+                <td>Ngoại Ngữ</td>
+                <td>Ngoại Ngữ</td>
+                <td>Ngoại Ngữ</td>
+                <td>Nghỉ</td>
+            </tr>
+            <tr>
+                <td>10h15 đến 11h</td>
+                <td>Toán</td>
+                <td>Toán</td>
+                <td>Toán</td>
+                <td>Toán</td>
+                <td>Toán</td>
+                <td>Sinh Hoạt</td>
+                <td>Nghỉ</td>
+            </tr>
+
+        </table>
+    </section>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Chỉnh sửa thuộc tính</p>
+          <div> <input type="text"> </div><br>
+          <button>Close</button>
+          <button>Submit</button>
+        </div>
+      
+      </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("change_timetable");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

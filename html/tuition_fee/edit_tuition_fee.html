@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/view_tuition_fee.css">
+
+    <title>Trang sửa thông tin học phí</title>
+</head>
+
+<body align="center">
+    <h1>Trang sửa thông tin học phí</h1>
+    <form>
+        <label for="fname">Mã Học Phí</label><br>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Mã Môn Học</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="fname">Tên Môn Học:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Nhap ten mon hoc"><br><br>
+        <label for="lname">Lệ Phí Đóng Học</label><br>
+        <input type="number" id="fname" name="fname" placeholder="Nhap so tien (VNĐ)"><br><br>
+        <label for="lname">Ngày sửa gần nhất</label><br>
+        <p>
+            <script> document.write(new Date().toLocaleDateString());</script>
+        </p>
+        <button><a href="/html/tuition_fee/view_tuition_fee.html">Quay lại</a> </button>
+        <input type="submit" value="Lưu thay đổi">
+
+    </form>
+</body>
+
+</html>

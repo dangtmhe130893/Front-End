@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link href="/css/manage_account.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div class="container main-background">
+            <div class="cover">
+                <div class="header">
+                    <div class="back">
+                        <a class="log-out-a" href="list">Back</a>
+                    </div>
+                    <div class="log-out">
+                        <a class="log-out-a">Log out</a>
+                    </div>
+                </div>
+                <div class="main-title">
+                    <div class="main-title-left">
+                        Add <b>New Product</b>
+                    </div>
+                    <div class="main-title-right">
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <form action="add" method="post" >
+                        <label class="label-add" for="id">Product Name:</label><br>
+                        <input class="input-add" type="text" id="name" name="name" required  placeholder="Enter Product Name"><br>
+                        <label class="label-add" for="id"required="required" >Product Image:</label><br>
+                        <input class="input-add" type="file" style="margin-left: 41%" id="image" name="image"  accept="image/png, image/jpeg"><br>
+                        <label class="label-add" for="id">Product Price:</label><br>
+                        <input class="input-add" type="text" id="price" name="price" required placeholder="Enter Product Price"><br>
+
+                        <input class="button-add" type="submit" value="Add">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
