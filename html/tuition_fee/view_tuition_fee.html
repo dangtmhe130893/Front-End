@@ -5,230 +5,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/view_tuition_fee.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/view_tuition_fee.css">
     <title>Học Phí</title>
 </head>
 
 <body>
-    <div class="col-md-12">
-        <form name="aspnetForm" method="post" action="./SubjectFees.aspx" id="aspnetForm">
 
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="/html/headmaster/homepage_headmaster.html" class="logo">Primary Education</a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="/html/headmaster/homepage_headmaster.html">Trang
+                                    Chủ</a></li>
+                            <li class="scroll-to-section"><a href="/html/tuition_fee/view_tuition_fee.html">Quản lý học
+                                    phí</a></li>
+                            <li class="scroll-to-section"><a href="#welcome">Quản lý phòng giáo vụ</a></li>
 
-            <!-- <div>
-
-                <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BBDAFBF7">
-                <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
-                    value="/wEdAAJluBldEiGhN2KyBh3XLnn7kGLvMv7Nr0WhoGyhp3lpMCum3LY4f6X0ZGoc1NdY/96aq+BxOFVXMpJz2Ub8wnkz">
+                            <li class="submenu">
+                                <a>Quản lý tài khoản</a>
+                                <ul>
+                                    <li><a href="/html/headmaster/">Thông tin cá nhân</a></li>
+                                    <li><a href="/html/guest/homepage_guest.html">Đăng xuất</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
             </div>
-            <div id="ctl00_divUser" style="float: right; margin-right: 16px;">
-                <a href="?view=user">
-                    <span id="ctl00_lblLogIn" class="label label-success">dangtmhe130893</span></a> | <a
-                    href="?logout=true" class="label label-success">logout</a> |
-                <span id="ctl00_lblCampusName" class="label label-success"> CAMPUS: FPTU-Hòa Lạc</span>
-            </div>
-            <ol class="breadcrumb">
-                <li>
-                    <span id="ctl00_lblNavigation"><a href="../Student.aspx">Home</a>&nbsp;|&nbsp;<b>Subject
-                            Fees</b></span>
-                </li>
-            </ol> -->
-            <table align="center">
-                <tbody>
-                    <tr style="border-bottom: 0 none">
-                        <td>
-                            <div align="center">
-                                <h2>Bảng Học Phí</h2>
-                                <div>
-                                    <table id="myTable" cellspacing="0" rules="all" border="1"
-                                        id="ctl00_mainContent_gvSubjects" style="border-collapse:collapse;">
-                                        <tbody>
-                                            <tr>
-                                                <th scope="col">Mã Học Phí</th>
-                                                <th scope="col">Mã Môn Học</th>
-                                                <th scope="col">Tên Môn Học</th>
-                                                <th scope="col">Lệ Phí Đóng Học</th>
-                                                <th scope="col">Ngày Tạo</th>
-                                                <th scope="col">Lựa Chọn</th>
-                                            </tr>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
 
-
-                                            <tr>
-                                                <td>HPT1</td>
-                                                <td>TOAN101</td>
-                                                <td>Toán lớp 1</td>
-                                                <td>500.000 đ</td>
-                                                <td>5,421,000</td>
-                                                <td> <a href="">Delete</a> </td>
-                                                <td> <a href="/html/tuition_fee/edit_tuition_fee.html">Edit</a> </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>HPT1</td>
-                                                <td>TOAN101</td>
-                                                <td>Toán lớp 1</td>
-                                                <td>500.000 đ</td>
-                                                <td>5,421,000</td>
-                                                <td> <a href="">Delete</a> </td>
-                                                <td> <a href="/html/tuition_fee/edit_tuition_fee.html">Edit</a> </td>
-
-                                            </tr><tr>
-                                                <td>HPT1</td>
-                                                <td>TOAN101</td>
-                                                <td>Toán lớp 1</td>
-                                                <td>500.000 đ</td>
-                                                <td>5,421,000</td>
-                                                <td> <a href="">Delete</a> </td>
-                                                <td> <a href="/html/tuition_fee/edit_tuition_fee.html">Edit</a> </td>
-
-                                            </tr><tr>
-                                                <td>HPT1</td>
-                                                <td>TOAN101</td>
-                                                <td>Toán lớp 1</td>
-                                                <td>500.000 đ</td>
-                                                <td>5,421,000</td>
-                                                <td> <a href="">Delete</a> </td>
-                                                <td> <a href="/html/tuition_fee/edit_tuition_fee.html">Edit</a> </td>
-
-                                            </tr><tr>
-                                                <td>HPT1</td>
-                                                <td>TOAN101</td>
-                                                <td>Toán lớp 1</td>
-                                                <td>500.000 đ</td>
-                                                <td>5,421,000</td>
-                                                <td> <a href="">Delete</a> </td>
-                                                <td> <a href="/html/tuition_fee/edit_tuition_fee.html">Edit</a> </td>
-
-                                            </tr><tr>
-                                                <td>HPT1</td>
-                                                <td>TOAN101</td>
-                                                <td>Toán lớp 1</td>
-                                                <td>500.000 đ</td>
-                                                <td>5,421,000</td>
-                                                <td> <a href="">Delete</a> </td>
-                                                <td> <a href="/html/tuition_fee/edit_tuition_fee.html">Edit</a> </td>
-
-                                            </tr><tr>
-                                                <td>HPT1</td>
-                                                <td>TOAN101</td>
-                                                <td>Toán lớp 1</td>
-                                                <td>500.000 đ</td>
-                                                <td>5,421,000</td>
-                                                <td> <a href="">Delete</a> </td>
-                                                <td> <a href="/html/tuition_fee/edit_tuition_fee.html">Edit</a> </td>
-
-                                            </tr><tr>
-                                                <td>HPT1</td>
-                                                <td>TOAN101</td>
-                                                <td>Toán lớp 1</td>
-                                                <td>500.000 đ</td>
-                                                <td>5,421,000</td>
-                                                <td> <a href="">Delete</a> </td>
-                                                <td> <a href="/html/tuition_fee/edit_tuition_fee.html">Edit</a> </td>
-
-                                            </tr><tr>
-                                                <td>HPT1</td>
-                                                <td>TOAN101</td>
-                                                <td>Toán lớp 1</td>
-                                                <td>500.000 đ</td>
-                                                <td>5,421,000</td>
-                                                <td> <a href="">Delete</a> </td>
-                                                <td> <a href="/html/tuition_fee/edit_tuition_fee.html">Edit</a> </td>
-
-                                            </tr><tr>
-                                                <td>HPT1</td>
-                                                <td>TOAN101</td>
-                                                <td>Toán lớp 1</td>
-                                                <td>500.000 đ</td>
-                                                <td>5,421,000</td>
-                                                <td> <a href="">Delete</a> </td>
-                                                <td> <a href="/html/tuition_fee/edit_tuition_fee.html">Edit</a> </td>
-
-                                            </tr><tr>
-                                                <td>HPT1</td>
-                                                <td>TOAN101</td>
-                                                <td>Toán lớp 1</td>
-                                                <td>500.000 đ</td>
-                                                <td>5,421,000</td>
-                                                <td> <a href="">Delete</a> </td>
-                                                <td> <a href="/html/tuition_fee/edit_tuition_fee.html">Edit</a> </td>
-
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <button type="button" onclick="myFunction()">Try it</button>
-
-                                    <script>
-                                        function myFunction() {
-                                            var table = document.getElementById("myTable");
-                                            var row = table.insertRow(0);
-                                            var cell1 = row.insertCell(0);
-                                            var cell2 = row.insertCell(1); 
-                                            var cell1 = row.insertCell(0);
-                                            var cell2 = row.insertCell(1);
-                                            cell1.innerHTML = "NEW CELL1";
-                                            cell2.innerHTML = "NEW CELL2";
-                                        }
-                                    </script>
-                                    <button><a href="create_tuition_fee.html">Tạo 1 học phí mới</a></button>
-                                </div>
-                                <input type="hidden" name="ctl00$mainContent$hdException"
-                                    id="ctl00_mainContent_hdException">
-
-                            </div>
-                        </td>
-                    </tr>
-                    <tr style="border-bottom: 0 none">
-                        <td>
-                            <br>
-
-                            <table width="100%" style="border: 1px solid transparent;" id="cssTable">
-
-                                <!-- <tbody>
-                                    <tr>
-                                        <td>
-                                            <div id="ctl00_divSupport">
-                                                <br>
-                                                <b>Mọi góp ý, thắc mắc xin liên hệ: </b><span
-                                                    style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13.333333969116211px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">Phòng
-                                                    dịch vụ sinh viên</span>: Email: <a
-                                                    href="mailto:dichvusinhvien@fe.edu.vn">dichvusinhvien@fe.edu.vn</a>.
-                                                Điện thoại: <span class="style1"
-                                                    style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 13.333333969116211px; font-style: normal; font-variant: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">(024)7308.13.13
-                                                </span>
-                                                <br>
-
-                                            </div>
-
-
-
-
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <p style="text-align: center">
-                                                © Powered by <a href="http://fpt.edu.vn" target="_blank">FPT
-                                                    University</a>&nbsp;|&nbsp;
-                                                <a href="http://cms.fpt.edu.vn/" target="_blank">CMS</a>&nbsp;|&nbsp; <a
-                                                    href="http://library.fpt.edu.vn"
-                                                    target="_blank">library</a>&nbsp;|&nbsp; <a
-                                                    href="http://library.books24x7.com" target="_blank">books24x7</a>
-                                                <span id="ctl00_lblHelpdesk"></span>
-                                            </p>
-                                        </td>
-                                    </tr>
-                                </tbody> -->
-                            </table>
-
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </form>
+    <div >
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr class="bg-danger">
+                    <th scope="col">Mã học phí<br>(Tuid)</th>
+                    <th scope="col">Mã môn học<br>(Subid)</th>
+                    <th scope="col">Tên môn học<br>(Sub_name)</th>
+                    <th scope="col">Học phí</th>
+                    <th scope="col">Ngày tạo</th>
+                    <th scope="col">Tùy chọn</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td><a href="/html/tuition_fee/edit_tuition_fee.html">Edit</a> | <a href="">Delete</a> </td>
+                </tr>
+                
+            </tbody>
+        </table>
     </div>
+        <button type="button" class="btn btn-primary"><a href="/html/tuition_fee/create_tuition_fee.html" class="btn_create">Tạo 1 học phí mới</a></button>
 </body>
 
 </html>
