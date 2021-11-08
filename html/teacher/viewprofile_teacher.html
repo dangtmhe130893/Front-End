@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thay đổi thông tin cá nhân</title>
+    <title>Thông tin cá nhân</title>
     <link rel="stylesheet" type="text/css" href="css/templatemo-art-factory.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
@@ -30,7 +30,7 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="/html/teacher/homepage_teacher.html"
-                                    class="active">Trang Chủ</a></li>
+                                    >Trang Chủ</a></li>
                             <li class="scroll-to-section"><a href="#welcome">Quản lý học sinh</a></li>
                             <li class="submenu">
                                 <a>Dạy học</a>
@@ -61,43 +61,33 @@
         </div>
     </header>
     <div class="bg_profile">
-        <div class="wrapper bg-white mt-sm-5" >
-            <h4 class="pb-4 border-bottom">Thay đổi thông tin cá nhân</h4>
+        <div class="wrapper bg-white mt-sm-5">
+            <h4 class="pb-4 border-bottom">Thông tin cá nhân</h4>
 
             <div class="py-2">
                 <div class="row py-2">
-                    <div class="col-md-6"> <label for="firstname">Họ</label> <input type="text"
-                            class="bg-light form-control" placeholder="Trần"> </div>
-                    <div class="col-md-6 pt-md-0 pt-3"> <label for="lastname">Tên</label> <input type="text"
-                            class="bg-light form-control" placeholder="Minh Đăng"> </div>
+                    <div class="col-md-6"> <label for="fullname">Họ và tên: <p>Trần Minh Đăng</p></label> </div>
+                    <div class="col-md-6 pt-md-0 pt-3"> <label for="sex">Giới Tính: <p>Nam</p></label> </div>
                 </div>
                 <div class="row py-2">
                     <div class="col-md-6">
-                        <label for="dob">Ngày Sinh</label>
-                        <input type="text" class="bg-light form-control" placeholder="dd/mm/yyyy">
+                        <label for="dob">Ngày Sinh<p>dd/mm/yyy</p></label>
                     </div>
                     <div class="col-md-6 pt-md-0 pt-3">
-                        <label for="sex">Giới Tính</label>
-                        <input type="text" class="bg-light form-control" placeholder="Nam">
+                        <label for="tid">Mã Số Giáo Viên<p>HE130893</p></label>
                     </div>
                 </div>
                 <div class="row py-2">
-                    <div class="col-md-6"> <label for="tid">Mã Số Giáo Viên</label> <input type="text"
-                            class="bg-light form-control" placeholder="dangtmhe130893"> </div>
-                    <div class="col-md-6 pt-md-0 pt-3"> <label for="phone">Số điện thoại</label> <input type="tel"
-                            class="bg-light form-control" placeholder="+1 213-548-6015"> </div>
+                    <div class="col-md-6"> <label for="phone">Số điện thoại<p>0374756537</p></label> </div>
+                    <div class="col-md-6 pt-md-0 pt-3">
+                        <label for="temail">Email<p>dangtmhe130893@fpt.edu.vn</p></label>
+                    </div>
                 </div>
-
-                <div class="row py-2">
-                    <div class="col-md-6"> <label for="temail">Email</label> <input type="text"
-                            class="bg-light form-control" placeholder="dangtmhe130893@fpt.edu.vn"> </div>
-                    <!-- <div class="col-md-6 pt-md-0 pt-3"> <label for="taddress"></label> <input type="tel"
-                        class="bg-light form-control" placeholder="+1 213-548-6015"> </div> -->
-                </div>
-
                 <div class="py-3 pb-4 border-bottom">
-                    <button class="btn btn-primary mr-3">Save Changes</button>
-                    <button class="btn border button"><a href="/html/teacher/viewprofile_teacher.html"><p class="btn_cancel">Cancel</p></a></button>
+                    <button class="btn btn-primary mr-3"><a href="/html/teacher/edit_teacher_profile.html">
+                            <p class="btn_change">Thay đổi
+                                thông tin cá nhân</p>
+                        </a></button>
                 </div>
             </div>
         </div>
